@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     actionmailer (3.2.8)
       actionpack (= 3.2.8)
@@ -37,7 +37,7 @@ GEM
       rack-test (>= 0.5.4)
       selenium-webdriver (~> 2.0)
       xpath (~> 0.1.4)
-    childprocess (0.3.6)
+    childprocess (0.3.7)
       ffi (~> 1.0, >= 1.0.6)
     coderay (1.0.8)
     coffee-rails (3.2.2)
@@ -172,7 +172,6 @@ PLATFORMS
 
 DEPENDENCIES
   capybara (= 1.1.2)
-  childprocess (= 0.3.6)
   coffee-rails (~> 3.2.1)
   execjs
   guard-rspec (= 1.2.1)

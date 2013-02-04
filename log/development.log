@@ -415,3 +415,1175 @@ Started GET "/static_pages/home" for 127.0.0.1 at 2013-02-03 12:16:45 +0530
 Processing by StaticPagesController#home as HTML
   Rendered static_pages/home.html.erb (0.9ms)
 Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2013-02-03 17:14:17 +0530
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-03 17:14:17 +0530
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-02-03 17:14:17 +0530
+Served asset /static_pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-03 17:14:17 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-03 17:14:17 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-02-03 17:14:17 +0530
+Served asset /static_pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-03 17:14:17 +0530
+Served asset /application.js - 304 Not Modified (10ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2013-02-04 01:30:17 +0530
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 57ms
+
+LoadError (cannot load such file -- action_view/template/error):
+  actionpack (3.2.8) lib/action_view/template.rb:311:in `handle_render_error'
+  actionpack (3.2.8) lib/action_view/template.rb:148:in `rescue in render'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/aniruddha/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__1145939510203387753__process_action__1470070334710164913__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.4) lib/rack/etag.rb:23:in `call'
+  rack (1.4.4) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2337922702042795329__call__1855995450391486410__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  railties (3.2.8) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (3.0.15) lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/utils.rb:470:in `safe_fork'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:180:in `start'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2013-02-04 01:41:48 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 21ms
+
+LoadError (cannot load such file -- action_view/template/error):
+  actionpack (3.2.8) lib/action_view/template.rb:311:in `handle_render_error'
+  actionpack (3.2.8) lib/action_view/template.rb:148:in `rescue in render'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/aniruddha/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__1145939510203387753__process_action__349324536256855836__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.4) lib/rack/etag.rb:23:in `call'
+  rack (1.4.4) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2337922702042795329__call__1855995450391486410__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  railties (3.2.8) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (3.0.15) lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/utils.rb:470:in `safe_fork'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:180:in `start'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2013-02-04 01:41:55 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 17ms
+
+LoadError (cannot load such file -- action_view/template/error):
+  actionpack (3.2.8) lib/action_view/template.rb:311:in `handle_render_error'
+  actionpack (3.2.8) lib/action_view/template.rb:148:in `rescue in render'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/aniruddha/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__1145939510203387753__process_action__349324536256855836__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.4) lib/rack/etag.rb:23:in `call'
+  rack (1.4.4) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2337922702042795329__call__1855995450391486410__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  railties (3.2.8) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (3.0.15) lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/utils.rb:470:in `safe_fork'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:180:in `start'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2013-02-04 01:44:16 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 13ms
+
+LoadError (cannot load such file -- action_view/template/error):
+  actionpack (3.2.8) lib/action_view/template.rb:311:in `handle_render_error'
+  actionpack (3.2.8) lib/action_view/template.rb:148:in `rescue in render'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/aniruddha/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__1145939510203387753__process_action__349324536256855836__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.4) lib/rack/etag.rb:23:in `call'
+  rack (1.4.4) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2337922702042795329__call__1855995450391486410__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  railties (3.2.8) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (3.0.15) lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/utils.rb:470:in `safe_fork'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:180:in `start'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2013-02-04 01:44:19 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 45ms
+
+LoadError (cannot load such file -- action_view/template/error):
+  actionpack (3.2.8) lib/action_view/template.rb:311:in `handle_render_error'
+  actionpack (3.2.8) lib/action_view/template.rb:148:in `rescue in render'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/aniruddha/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__1145939510203387753__process_action__349324536256855836__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.4) lib/rack/etag.rb:23:in `call'
+  rack (1.4.4) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2337922702042795329__call__1855995450391486410__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  railties (3.2.8) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (3.0.15) lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/utils.rb:470:in `safe_fork'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:180:in `start'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2013-02-04 01:55:22 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 23ms
+
+LoadError (cannot load such file -- action_view/template/error):
+  actionpack (3.2.8) lib/action_view/template.rb:311:in `handle_render_error'
+  actionpack (3.2.8) lib/action_view/template.rb:148:in `rescue in render'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/aniruddha/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__1145939510203387753__process_action__349324536256855836__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.4) lib/rack/etag.rb:23:in `call'
+  rack (1.4.4) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2337922702042795329__call__1855995450391486410__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  railties (3.2.8) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (3.0.15) lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/utils.rb:470:in `safe_fork'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:180:in `start'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2013-02-04 01:55:25 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 44ms
+
+LoadError (cannot load such file -- action_view/template/error):
+  actionpack (3.2.8) lib/action_view/template.rb:311:in `handle_render_error'
+  actionpack (3.2.8) lib/action_view/template.rb:148:in `rescue in render'
+  actionpack (3.2.8) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /home/aniruddha/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__1145939510203387753__process_action__349324536256855836__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.4) lib/rack/etag.rb:23:in `call'
+  rack (1.4.4) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.4) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2337922702042795329__call__1855995450391486410__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  railties (3.2.8) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (3.0.15) lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/utils.rb:470:in `safe_fork'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:180:in `start'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+Connecting to database specified by database.yml
+
+
+Started GET "/static_pages/help" for 127.0.0.1 at 2013-02-04 02:24:53 +0530
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (3.3ms)
+Compiled jquery.js  (35ms)  (pid 6793)
+Compiled jquery_ujs.js  (0ms)  (pid 6793)
+Compiled application.js  (81ms)  (pid 6793)
+Completed 200 OK in 144ms (Views: 143.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 02:24:54 +0530
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-02-04 02:24:54 +0530
+Served asset /static_pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 02:24:54 +0530
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-02-04 02:24:54 +0530
+Served asset /static_pages.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 02:24:56 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 02:24:56 +0530
+Served asset /application.js - 304 Not Modified (7ms)
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2013-02-04 02:25:09 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 97ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-02-04 02:25:09 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 02:25:09 +0530
+Served asset /static_pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 02:25:09 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 02:25:09 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 02:25:09 +0530
+Served asset /application.css - 304 Not Modified (4ms)
+Served asset /application.js - 304 Not Modified (16ms)
+Served asset /jquery.js - 304 Not Modified (55ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-02-04 02:25:10 +0530
+Served asset /static_pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2013-02-04 02:27:46 +0530
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 97ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 02:27:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 02:27:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 02:27:46 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-02-04 02:27:46 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 02:27:46 +0530
+Served asset /static_pages.css - 304 Not Modified (3ms)
+Served asset /application.js - 304 Not Modified (6ms)
+Served asset /application.css - 304 Not Modified (4ms)
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-02-04 02:27:47 +0530
+Served asset /static_pages.js - 304 Not Modified (3ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2013-02-04 02:38:05 +0530
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 98ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 02:38:05 +0530
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-02-04 02:38:05 +0530
+Served asset /static_pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 02:38:05 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 02:38:05 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-02-04 02:38:05 +0530
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 02:38:05 +0530
+Served asset /application.js - 304 Not Modified (8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2013-02-04 02:38:15 +0530
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 98ms (Views: 97.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-02-04 02:38:15 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 02:38:15 +0530
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 02:38:15 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 02:38:15 +0530
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 02:38:15 +0530
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-02-04 02:38:15 +0530
+Served asset /static_pages.css - 304 Not Modified (0ms)
+Served asset /application.js - 304 Not Modified (8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/static_pages/help" for 127.0.0.1 at 2013-02-04 02:38:23 +0530
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 02:38:23 +0530
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-02-04 02:38:23 +0530
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 02:38:23 +0530
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-02-04 02:38:23 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 02:38:23 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Served asset /static_pages.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 02:38:24 +0530
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2013-02-04 10:26:53 +0530
+
+ActionController::RoutingError (No route matches [GET] "/static_pages/contact"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  railties (3.2.8) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (3.0.15) lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/utils.rb:470:in `safe_fork'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:180:in `start'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/aniruddha/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.6ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2013-02-04 10:27:01 +0530
+
+ActionController::RoutingError (No route matches [GET] "/static_pages/contact"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.4) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.4) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.4) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  railties (3.2.8) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (3.0.15) lib/phusion_passenger/rack/request_handler.rb:96:in `process_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:516:in `accept_and_process_next_request'
+  passenger (3.0.15) lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:206:in `start_request_handler'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:171:in `block in handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/utils.rb:470:in `safe_fork'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:166:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:180:in `start'
+  passenger (3.0.15) lib/phusion_passenger/rack/application_spawner.rb:129:in `start'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:253:in `block (2 levels) in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:246:in `block in spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:82:in `block in synchronize'
+  <internal:prelude>:10:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:244:in `spawn_rack_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:137:in `spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+  passenger (3.0.15) lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+  passenger (3.0.15) helper-scripts/passenger-spawn-server:99:in `<main>'
+
+
+  Rendered /home/aniruddha/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2013-02-04 10:30:47 +0530
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-04 10:30:47 +0530
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-02-04 10:30:47 +0530
+Served asset /static_pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-04 10:30:47 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-04 10:30:47 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-02-04 10:30:47 +0530
+Served asset /static_pages.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-04 10:30:47 +0530
+Served asset /application.js - 304 Not Modified (12ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2013-02-04 16:56:34 +0530
+Served asset /application.css - 200 OK (0ms)
