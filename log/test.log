@@ -3285,3 +3285,4 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  rollback transaction
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
