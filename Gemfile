@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.2.8'
+gem 'bootstrap-sass', '2.1'
 gem 'execjs'
 gem 'therubyracer'
 gem 'childprocess', '0.3.6'
