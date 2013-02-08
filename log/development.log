@@ -4476,3 +4476,4 @@ Served asset /users.js - 304 Not Modified (0ms)
 Served asset /application.js - 304 Not Modified (6ms)
 Served asset /application.css - 304 Not Modified (18ms)
 Served asset /custom.css - 304 Not Modified (51ms)
+Connecting to database specified by database.yml
